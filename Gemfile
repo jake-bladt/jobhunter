@@ -9,9 +9,15 @@ group :development, :test do
   gem 'rspec-rails', '2.13.1'
 end
 
-gem 'sass-rails', '4.0.1'
-gem 'uglifier', '2.1.1'
-gem 'coffee-rails', '4.0.1'
+group :assets do
+  gem 'sass-rails', '4.0.1'
+  gem 'uglifier', '2.1.1'
+  gem 'coffee-rails', '4.0.1'
+  gem 'twitter-bootstrap-rails', '~> 2.2.8'
+  gem 'less-rails', '~> 2.4.2'
+  gem 'therubyracer', '~> 0.12.1'
+end
+
 gem 'jquery-rails', '3.0.4'
 gem 'turbolinks', '1.1.1'
 gem 'jbuilder', '1.0.2'
