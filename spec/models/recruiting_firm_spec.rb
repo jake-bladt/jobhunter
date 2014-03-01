@@ -8,4 +8,10 @@ describe RecruitingFirm do
 
   it { should respond_to :name }
   it { should respond_to :contact }
+  it { should be_valid }
+
+  describe "when name isn't set" do
+  	before { @firm.name = nil }
+  	it { should_not be_valid }
+  end
 end
