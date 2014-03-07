@@ -1,4 +1,4 @@
-== Jobhunter
+## Jobhunter
 
 The purpose of this application is to allow users to track and manage a job search. While there are
 many, many websites available for advertising jobs and finding job leads, there are few if any resources
