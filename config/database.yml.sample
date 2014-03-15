@@ -1,18 +1,27 @@
 development:
-  adapter: sqlite3
-  database: db/development.sqlite3
+  adapter: postgresql
+  encoding: unicode
+  database: jobhunter-dev
   pool: 5
-  timeout: 5000
+  host: localhost
+  username: action
+  password:
 
 test:
-  adapter: sqlite3
-  database: db/test.sqlite3
+  adapter: postgresql
+  encoding: unicode
+  database: jobhunter-test
   pool: 5
-  timeout: 5000
+  host: localhost
+  username: action
+  password:
 
 production:
-  adapter: sqlite3
-  database: db/production.sqlite3
+  adapter: postgresql
+  encoding: unicode
+  database: jobhunter-prod
   pool: 5
-  timeout: 5000
+  host: localhost
+  username: action
+  password:
   
