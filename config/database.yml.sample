@@ -4,7 +4,7 @@ development:
   database: jobhunter-dev
   pool: 5
   host: localhost
-  username: action
+  username: 
   password:
 
 test:
@@ -13,7 +13,7 @@ test:
   database: jobhunter-test
   pool: 5
   host: localhost
-  username: action
+  username: 
   password:
 
 production:
@@ -22,6 +22,6 @@ production:
   database: jobhunter-prod
   pool: 5
   host: localhost
-  username: action
+  username: 
   password:
   
