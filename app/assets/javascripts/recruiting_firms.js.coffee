@@ -1,3 +1,11 @@
-# Place all the behaviors and hooks related to the matching controller here.
-# All this logic will automatically be available in application.js.
-# You can use CoffeeScript in this file: http://coffeescript.org/
+@RecruitingFirmCtrl = ($scope) -> 
+  $scope.firms = [
+    {name: "JobSpring Partners", primary_contact: "Cole Rutledge"}
+    {name: "Grady-Levkov", primary_contact: "Josh Levkov"}
+    {name: "Hired.com", primary_contact: "Lexi Lewtan"}
+  ]
+
+  $scope.addFirm = ->
+    $scope.firms.push($scope.newFirm)
+    $scope.newFirm = {}
+    

@@ -1,74 +1,26 @@
 <h1>JobHunter</h1>
-<form>
-  <input type="text" data-ng-model="newRecruitingFirm.name">
-</form>
-{{ newRecruitingFirm.name }}
 
-<h2>table_name</h2>
-<table>
-  <thead>
-  	<tr>
-  	  <td>Col-1</td>
-  	  <td>Col-2</td>
-  	  <td>...</td>
-  	  <td>Col-n</td>
-    </tr>
-  </thead>
-  <tbody>
-  	<tr>
-  	  <td>Val-1</td>
-  	  <td>Val-2</td>
-  	  <td>...</td>
-  	  <td>Val-n</td>
-  	</tr>
-  <tbody>
-<table>
-
-<h2>open job opportunities</h2>
-<table>
-  <thead>
-    <tr>
-      <td>Employer</td>
-      <td>Job</td>
-      <td>Recruiter</td>
-      <td>Next Action</td>
-      <td>Aging</td>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Wonka Chocolate</td>
-      <td>Oompa Loompa Wrangler</td>
-      <td>-</td>
-      <td>Live Interview</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>Dunder Mifflin</td>
-      <td>Paper Specialist</td>
-      <td>David @ Wernham-Hogg</td>
-      <td>Call David</td>
-      <td>2 days</td>
-    </tr>
-  </tbody>
-</table>
-
-<h2>table_name</h2>
-<table>
-  <thead>
-  	<tr>
-  	  <td>Col-1</td>
-  	  <td>Col-2</td>
-  	  <td>...</td>
-  	  <td>Col-n</td>
-    </tr>
-  </thead>
-  <tbody>
-  	<tr>
-  	  <td>Val-1</td>
-  	  <td>Val-2</td>
-  	  <td>...</td>
-  	  <td>Val-n</td>
-  	</tr>
-  <tbody>
-<table>
+<div id="recruiting_firms">
+  <h2>recruiting firms</h2>
+  <form data-ng-submit="addFirm()">
+    <table>
+      <thead>
+        <tr>
+          <td>Firm Name</td>
+          <td>Primary Contact</td>
+        </tr>
+      </thead>
+      <tbody data-ng-controller="RecruitingFirmCtrl">
+        <tr data-ng-repeat="firm in firms">
+          <td>{{firm.name}}</td>
+          <td>{{firm.primary_contact}}</td>
+        </tr>
+        <tr>
+          <td><input type="text" data-ng-model="newFirm.name"></td>
+          <td><input type="text" data-ng-model="newFirm.primary_contact"></td>
+        </tr>
+    </tbody>
+  </table>
+  <input type="submit" value="add"/>
+  </form>
+</div>
