@@ -19,3 +19,6 @@ doc/
 .idea
 .secret
 *.orig
+
+# Ignore vagrant artifacts
+.vagrant/
