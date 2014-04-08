@@ -22,20 +22,27 @@
 
 <div id="recruiting_firms">
   <h2>recruiting firms</h2>
-  <table>
-    <thead>
-      <tr>
-        <td>Firm Name</td>
-        <td>Primary Contact</td>
-      </tr>
-    </thead>
-    <tbody data-ng-controller="RecruitingFirmCtrl">
-      <tr data-ng-repeat="firm in firms">
-        <td>{{firm.name}}</td>
-        <td>{{firm.primary_contact}}</td>
-      </tr>
+  <form data-ng-submit="addFirm()">
+    <table>
+      <thead>
+        <tr>
+          <td>Firm Name</td>
+          <td>Primary Contact</td>
+        </tr>
+      </thead>
+      <tbody data-ng-controller="RecruitingFirmCtrl">
+        <tr data-ng-repeat="firm in firms">
+          <td>{{firm.name}}</td>
+          <td>{{firm.primary_contact}}</td>
+        </tr>
+        <tr>
+          <td><input type="text" data-ng-model="newFirm.name"></td>
+          <td><input type="text" data-ng-model="newFirm.primary_contact"></td>
+        </tr>
     </tbody>
   </table>
+  <input type="submit" value="add"/>
+  </form>
 </div>
 
 <h2>table_name</h2>
