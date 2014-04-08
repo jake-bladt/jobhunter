@@ -2,7 +2,7 @@
 
 <div id="recruiting_firms">
   <h2>recruiting firms</h2>
-  <form data-ng-submit="addFirm()">
+  <form data-ng-controller="RecruitingFirmCtrl" data-ng-submit="addFirm()">
     <table>
       <thead>
         <tr>
@@ -10,7 +10,7 @@
           <td>Primary Contact</td>
         </tr>
       </thead>
-      <tbody data-ng-controller="RecruitingFirmCtrl">
+      <tbody>
         <tr data-ng-repeat="firm in firms">
           <td>{{firm.name}}</td>
           <td>{{firm.primary_contact}}</td>
