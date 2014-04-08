@@ -1,6 +1,6 @@
 @RecruitingFirmCtrl = ($scope) -> 
   $scope.firms = [
-    {name: "JobSpring Partners"}
-    {name: "Grady-Levkov"}
-    {name: "Hired.com"}
+    {name: "JobSpring Partners", primary_contact: "Cole Rutledge"}
+    {name: "Grady-Levkov", primary_contact: "Josh Levkov"}
+    {name: "Hired.com", primary_contact: "Lexi Lewtan"}
   ]

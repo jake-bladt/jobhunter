@@ -20,32 +20,19 @@
   <tbody>
 <table>
 
-<div id="recruiting_firms" data-ng-controller="RecruitingFirmCtrl">
+<div id="recruiting_firms">
   <h2>recruiting firms</h2>
   <table>
     <thead>
       <tr>
-        <td>Employer</td>
-        <td>Job</td>
-        <td>Recruiter</td>
-        <td>Next Action</td>
-        <td>Aging</td>
+        <td>Firm Name</td>
+        <td>Primary Contact</td>
       </tr>
     </thead>
-    <tbody>
-      <tr>
-        <td>Wonka Chocolate</td>
-        <td>Oompa Loompa Wrangler</td>
-        <td>-</td>
-        <td>Live Interview</td>
-        <td>-</td>
-      </tr>
-      <tr>
-        <td>Dunder Mifflin</td>
-        <td>Paper Specialist</td>
-        <td>David @ Wernham-Hogg</td>
-        <td>Call David</td>
-        <td>2 days</td>
+    <tbody data-ng-controller="RecruitingFirmCtrl">
+      <tr data-ng-repeat="firm in firms">
+        <td>{{firm.name}}</td>
+        <td>{{firm.primary_contact}}</td>
       </tr>
     </tbody>
   </table>
