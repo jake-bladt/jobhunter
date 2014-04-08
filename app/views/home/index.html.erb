@@ -1,8 +1,4 @@
 <h1>JobHunter</h1>
-<form>
-  <input type="text" data-ng-model="newRecruitingFirm.name">
-</form>
-{{ newRecruitingFirm.name }}
 
 <h2>table_name</h2>
 <table>
@@ -24,34 +20,36 @@
   <tbody>
 <table>
 
-<h2>open job opportunities</h2>
-<table>
-  <thead>
-    <tr>
-      <td>Employer</td>
-      <td>Job</td>
-      <td>Recruiter</td>
-      <td>Next Action</td>
-      <td>Aging</td>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Wonka Chocolate</td>
-      <td>Oompa Loompa Wrangler</td>
-      <td>-</td>
-      <td>Live Interview</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>Dunder Mifflin</td>
-      <td>Paper Specialist</td>
-      <td>David @ Wernham-Hogg</td>
-      <td>Call David</td>
-      <td>2 days</td>
-    </tr>
-  </tbody>
-</table>
+<div id="recruiting_firms" data-ng-controller="RecruitingFirmCtrl">
+  <h2>recruiting firms</h2>
+  <table>
+    <thead>
+      <tr>
+        <td>Employer</td>
+        <td>Job</td>
+        <td>Recruiter</td>
+        <td>Next Action</td>
+        <td>Aging</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Wonka Chocolate</td>
+        <td>Oompa Loompa Wrangler</td>
+        <td>-</td>
+        <td>Live Interview</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>Dunder Mifflin</td>
+        <td>Paper Specialist</td>
+        <td>David @ Wernham-Hogg</td>
+        <td>Call David</td>
+        <td>2 days</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 <h2>table_name</h2>
 <table>
